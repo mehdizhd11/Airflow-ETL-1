@@ -40,7 +40,7 @@ extract_task = PythonOperator(
     task_id='extract_data',
     python_callable=extract_data,
     op_kwargs={
-        'csv_path': './customers-1000.csv',
+        'csv_path': './ETL_dag_1/customers-1000.csv',
         'redis_host': 'localhost',
         'redis_port': 6379
     },
